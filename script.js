@@ -142,4 +142,3 @@ const camera = new Camera(video, {
 });
 
 camera.start();
-
