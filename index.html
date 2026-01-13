@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Deteksi Jari</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+
+    <nav class="topbar">
+      <div class="logo">GestureAI</div>
+      <div class="tag">Real-time Finger Intelligence</div>
+    </nav>
+
+    <section class="hero">
+      <h1>Hand Gesture Intelligence</h1>
+      <p>AI-powered finger recognition directly from your camera</p>
+    </section>
+
+    <section class="workspace">
+
+      <div class="panel camera-panel">
+        <div class="panel-title">Live Camera</div>
+        <div class="camera-box">
+          <video id="video" autoplay playsinline></video>
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+
+      <div class="panel result-panel">
+        <div class="panel-title">Detection Result</div>
+
+        <div class="metric">
+          <span class="metric-label">Finger Count</span>
+          <span id="info" class="metric-value">0</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-label">Detected Word</span>
+          <span id="word" class="metric-value">-</span>
+        </div>
+
+        <div class="metric highlight">
+          <span class="metric-label">Generated Sentence</span>
+          <span id="sentence" class="metric-value">-</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      Powered by Computer Vision & MediaPipe
+    </footer>
+
+  </div>
+
+  <!-- scripts tetap -->
+</body>
+
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
