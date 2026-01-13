@@ -14,18 +14,18 @@ canvas.height = 480;
 ========================= */
 const fingerWords = {
   1: "Aku",
-  2: "Kamu",
-  3: "Sedang",
-  4: "Belajar",
-  5: "Computer",
-  6: "Vision",
-  7: "Dengan",
-  8: "MediaPipe",
-  9: "Hands",
+  2: "Mau",
+  3: "Nikah",
+  4: "Sama",
+  5: "Kamu",
+  6: "Cipung",
+  7: "Kamalia",
+  8: "Ngambbekku",
+  9: "Cantikku",
 };
 
 const finalSentence =
-  "Aku Kamu Sedang Belajar Computer Vision Dengan MediaPipe Hands";
+  "Aku Mau Nikah Sama Kamu Cipung Kamalia Ngambbekku Cantikku";
 
 /* =========================
    STABILIZER
@@ -142,3 +142,4 @@ const camera = new Camera(video, {
 });
 
 camera.start();
+
